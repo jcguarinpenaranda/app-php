@@ -24,7 +24,7 @@ try{
 }
 
 if($bool){
-  header("Location: registrarAmigos.php?exito");
+  header("Location: registroAmigos.php?exito");
 }else{
-  header("Location: registrarAmigos.php?error");
+  header("Location: registroAmigos.php?error");
 }
