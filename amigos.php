@@ -22,8 +22,8 @@
               <span class="black-text">
                 <h3><?php echo $amigos[$i]['nombre'];?></h3>
                 <p>
-                  <?php echo $amigos[$i]['email'];?>,
-                  <br> <?php echo $amigos[$i]['direccion'];?>,
+                  <?php echo $amigos[$i]['email'];?>
+                  <br> <?php echo $amigos[$i]['direccion'];?>
                   <br><?php echo $amigos[$i]['telefono'];?>
                 </p>
               </span>
