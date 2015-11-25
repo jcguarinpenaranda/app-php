@@ -19,12 +19,14 @@ $bool = false;
 
 try{
   $bool = $bd->insert("insert into amigos (nombre,direccion,telefono,email) values ('$nombre', '$direccion', $telefono, '$email');");
+
+  if($bool){
+    header("Location: registroAmigos.php?exito");
+  }else{
+    header("Location: registroAmigos.php?error");
+  }
+
+
 }catch(Exception $e){
-
-}
-
-if($bool){
-  header("Location: registroAmigos.php?exito");
-}else{
-  header("Location: registroAmigos.php?error");
+  var_dump($e);
 }
